@@ -2,9 +2,15 @@ Thanks to Instructables user haslettj for his awesome guide and automated recept
 Their guide may be accessed at the link below, and I highly recommend following it.
 http://instructables.com/id/Raspberry-Pi-NOAA-Weather-Satellite-Receiver/
 
+You must install Predict, WXtoImg SoX, and Twython.
+Predict:  https://www.qsl.net/kd2bd/predict.html
+WXtoImg:  https://wxtoimgrestored.xyz/
+SoX:      http://sox.sourceforge.net/
+Twython:  https://twython.readthedocs.io
+
 *Twython Configuration*
 My addition to haslettj's scripts is the python file weathertweeter.py located in the directory weathertweeter. 
-It runs a python script using Twython, which you must have installed.         *A note about Twython versions below
+It runs a python script using Twython, which you must have installed.                        *A note about Twython versions below
 You must put your twitter API keys/secrets in the places marked "***YOUR_KEY***" in weathertweeter.py to properly configure Twython.
 Your key and secret can be found on Twitter's developers page when you create your application at (https://developer.twitter.com)
 
