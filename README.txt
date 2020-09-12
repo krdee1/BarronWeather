@@ -1,3 +1,7 @@
+This repo has been most recently updated to use a new file organization structure. It keeps the scripts in one place, and it puts audio and image outputs into separate directories. Under the hood, the scripting is generally the same except where I had to change paths to subsequent scripts to reflect their new locations.
+
+Read my (mostly) complete setup guide here: http://kevin-dee.com/NOAAImaging.html
+
 Thanks to Instructables user haslettj for his awesome guide and automated reception scripts. 
 Their guide may be accessed at the link below, and I highly recommend following it.
 http://instructables.com/id/Raspberry-Pi-NOAA-Weather-Satellite-Receiver/
