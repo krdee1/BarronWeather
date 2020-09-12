@@ -4,7 +4,7 @@ http://instructables.com/id/Raspberry-Pi-NOAA-Weather-Satellite-Receiver/
 
 You must install Predict, WXtoImg SoX, and Twython.
 Predict:  https://www.qsl.net/kd2bd/predict.html
-WXtoImg:  https://wxtoimgrestored.xyz/
+WXtoImg:  https://wxtoimgrestored.xyz/ (included .deb in this repository since it may be hard to track down otherwise)
 SoX:      http://sox.sourceforge.net/
 Twython:  https://twython.readthedocs.io
 
