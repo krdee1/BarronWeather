@@ -1,5 +1,0 @@
-Audio products (wavs) go here.
-
-You probably don't want to store these, since they're not very interesting to list to, and are only used to generate the images.
-Feel free to create a cron job to empty this folder regularly, or else you may run into storage issues (eventually)
-
