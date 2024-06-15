@@ -1,3 +1,7 @@
+06/2024
+This repo is really outdated, but I'm leaving it up for posterity. I recommend using Satdump instead.
+
+
 This repo has been most recently updated to use a new file organization structure. It keeps the scripts in one place, and it puts audio and image outputs into separate directories. Under the hood, the scripting is generally the same except where I had to change paths to subsequent scripts to reflect their new locations.
 
 Read my (mostly) complete setup guide here: http://kevin-dee.com/NOAAImaging.html
