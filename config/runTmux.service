@@ -1,0 +1,11 @@
+[Unit]
+Description=Job that runs tmux startup
+
+[Service]
+ExecStart=/bin/bash /home/${USER}/BarronWeather/config/runTmux.sh
+Type=oneshot
+RemainAfterExit=yes
+User=kdee
+
+[Install]
+WantedBy=multi-user.target

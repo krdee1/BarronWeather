@@ -1,0 +1,130 @@
+{
+    "parameters": {
+        "samplerate": 1.024e6,
+        "initial_frequency": 137.5e6,
+        "source": "rtlsdr",
+        "gain": 21,
+        "fft_enable": true,
+        "fft_size": 8192,
+        "fft_rate": 10,
+	    "fft_avgn": 10,
+        "fft_min": -110,
+        "fft_max": 0,
+        "bias": true
+    },
+    "finish_processing": true,
+    "output_folder": "/home/kdee/BarronWeather/output",
+    "qth": {
+        "lat": XX.XXXXXX,
+        "lon": XX.XXXXXX,
+        "alt": XXX
+    },
+    "http_server": "0.0.0.0:8081",
+    "tracking": {
+        "rotator_config": {
+            "rotctl": {
+                "address": "127.0.0.1",
+                "port": 4533
+            }
+        },
+        "rotator_algo": {
+            "park_position": {
+                "az": 0.0,
+                "el": 90.0
+            },
+            "park_while_idle": true,
+            "unpark_at_minus": 60.0,
+            "update_period": 0.1
+        },
+        "autotrack_cfg": {
+            "autotrack_min_elevation": 20,
+            "stop_sdr_when_idle": true,
+            "multi_mode": true
+        }
+    },
+    "tracked_objects": [
+        {
+            "norad": 25338,
+            "downlinks": [
+                {
+                    "frequency": 137620000,
+                    "record": false,
+                    "live": true,
+                    "pipeline_name": "noaa_apt",
+                    "pipeline_params": {
+                        "autocrop_wedges": false,
+                        "satellite_number": "15",
+                        "sdrpp_noise_reduction": true
+                    }
+                 },
+                 {
+                     "frequency": 137350000,
+                     "record": false,
+                     "live": true,
+                     "pipeline_name": "noaa_dsb",
+                     "pipeline_params": {}
+                }
+            ]
+        },
+        {
+            "norad": 28654,
+            "downlinks": [
+                {
+                    "frequency": 137912500,
+                    "record": false,
+                    "live": true,
+                    "pipeline_name": "noaa_apt",
+                    "pipeline_params": {
+                        "autocrop_wedges": false,
+                        "satellite_number": "18",
+                        "sdrpp_noise_reduction": true
+                    }
+                 },
+                 {
+                     "frequency": 137350000,
+                     "record": false,
+                     "live": true,
+                     "pipeline_name": "noaa_dsb",
+                     "pipeline_params": {}
+                }
+            ]
+        },
+        {
+            "norad": 33591,
+            "downlinks": [
+                {
+                    "frequency": 137100000,
+                    "record": false,
+                    "live": true,
+                    "pipeline_name": "noaa_apt",
+                    "pipeline_params": {
+                        "autocrop_wedges": false,
+                        "satellite_number": "19",
+                        "sdrpp_noise_reduction": true
+                    }
+                 },
+                {
+                     "frequency": 137770000,
+                     "record": false,
+                     "live": true,
+                     "pipeline_name": "noaa_dsb",
+                     "pipeline_params": {}
+                }
+            ]
+        },
+        {
+            "norad": 57166,
+            "downlinks": [
+                {
+                    "frequency": 137900000,
+                    "record": false,
+                    "live": true,
+                    "pipeline_name": "meteor_m2-x_lrpt",
+                    "pipeline_params": {
+                        "dc_block": true
+                    }
+                }
+            ]
+        }
+    ]
+}
